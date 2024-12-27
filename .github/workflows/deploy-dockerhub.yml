@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: safeglobal/safe-wallet-web:staging
+        tags: gulabs/safe-wallet-web:staging
         platforms: |
           linux/amd64
           linux/arm64
@@ -41,7 +41,7 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: safeglobal/safe-wallet-web:dev
+        tags: gulabs/safe-wallet-web:dev
         platforms: |
           linux/amd64
           linux/arm64
@@ -53,8 +53,8 @@ jobs:
       with:
         push: true
         tags: |
-          safeglobal/safe-wallet-web:${{ github.event.release.tag_name }}
-          safeglobal/safe-wallet-web:latest
+          gulabs/safe-wallet-web:${{ github.event.release.tag_name }}
+          gulabs/safe-wallet-web:latest
         platforms: |
           linux/amd64
           linux/arm64
